@@ -1,17 +1,15 @@
 {
-  "version": "1.1.0",
-  "date": "2026-10-11",
+  "version": "1.1.1",
+  "date": "2026-10-12",
   "changes": [
-    "Runs on .NET 10 (security updates until November 2028)",
-    "French language; the chosen language is remembered",
-    "Put everything back now - a button and an optional key during a session",
-    "Each session records the frame rate it ran at, shown on the History page",
-    "A readiness check before a session: Defender scans, Windows Update, OneDrive, busy disk, hot graphics card",
-    "Export and import of game profiles and settings",
-    "Save a diagnostics file, with names and folders taken out",
-    "Check for updates",
-    "Unexpected errors are written to a log instead of closing the window",
-    "Restoring programs no longer stops on an error dialog for a missing program",
-    "The shipped RTSS layout is the corrected one"
+    "A program with a protected part stays open: SteelSeries GG no longer goes down with its audio router Sonar",
+    "RTSS stays open through a session, so the overlay, frame cap and frame-rate record keep working",
+    "Programs whose code runs inside other programs (Windhawk) are no longer stopped - stopping them crashed others",
+    "The session monitor checks in milliseconds instead of 2.6 seconds per check",
+    "Comparisons set aside rounds where the game changed mode on its own, and measure a lost round again",
+    "The hitch count is no longer confused by frame generation",
+    "Network quality (Lab): finds the game's own server, IPv6 included, and measures to the last router when the server ignores ping",
+    "Fewer false 'left behind' reports after a session: late helpers and services Windows stops on its own",
+    "Two more privacy options: no licence validation ticket sent online, online speech recognition off"
   ]
 }
